@@ -1,0 +1,146 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the character encoding */
+@charset "UTF-8";
+
+/* Body styles */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #931212d4;
+  margin: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #000000;
+  color: #c3c3c3;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Main layout styles */
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+/* Filter sidebar styles */
+aside {
+  width: 25%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+/* Footer styles */
+#footer {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Car grid styles */
+#cargrid {
+  margin-left: 5px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #232323;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Car card styles */
+.car-card {
+  border: 1px solid #ccc;
+  width: 30%;
+  height: auto;
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Car card title styles */
+.car-card h2 {
+  font-size: 18px;
+  color: #000000;
+}
+
+/* Car card image styles */
+.car-card img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Car card paragraph styles */
+.car-card p {
+  line-height: 1.5;
+  margin: 10px 0;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Clearfix styles for containing floated elements */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Input field styles for filters */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin: 10px;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Filter container styles */
+#SearchFunction {
+  width: 30%;
+  padding: 20px;
+  background-color: #789;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Try again message styles */
+.tryagain {
+  display: none;
+}
+
+/* Car list container styles */
+#carList {
+  max-height: 0;
+  display: none;
+}
